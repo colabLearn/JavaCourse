@@ -70,4 +70,14 @@ public class CarDealership {
             }
         }
     }
+
+    public Car findCarByManufacturer(String Manufacturer) {
+        Car found=null;
+        for (Car car : this.carInStock) {
+            if(car.getManufacturer().equals(Manufacturer)){
+                found=car;
+            }
+        }
+        return found;
+    }
 }

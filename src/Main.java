@@ -30,11 +30,17 @@ public class Main {
                 KaratuStock
         );
 
-        System.out.println(dealer1.countCarsInStock());
-        dealer1.displayStock();
-        dealer1.addCarToStock(Car3);
-        System.out.println(dealer1.countCarsInStock());
-        dealer1.displayStock();
+//        System.out.println(dealer1.countCarsInStock());
+//        dealer1.displayStock();
+//        dealer1.addCarToStock(Car3);
+//        System.out.println(dealer1.countCarsInStock());
+//        dealer1.displayStock();
+
+        Car ToyotaInStock = dealer1.findCarByManufacturer("Toyota");
+        Car MazdaInStock = dealer1.findCarByManufacturer("Mazda");
+        System.out.println(ToyotaInStock);
+        System.out.println(MazdaInStock);
+
 
     }
 }
